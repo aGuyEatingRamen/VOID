@@ -1,0 +1,205 @@
+.root {
+    -fx-background-color: #1C1B22; /* Dark background */
+    -fx-font-family: 'Helvetica';
+}
+
+.top-nav-bar {
+    -fx-background-color: #1C1B22;
+    -fx-padding: 10 15;
+}
+
+.month-label {
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}
+
+.view-button, .today-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+
+.search-box {
+    -fx-background-color: #2B2A33;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #808080;
+}
+
+.sidebar {
+    -fx-background-color: #1C1B22; /* Dark background */
+    -fx-padding: 10;
+    -fx-spacing: 10;
+}
+
+.calendar-listview {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: #1C1B22; /* Dark background for list */
+    -fx-text-fill: white;
+}
+
+.calendar-listview .list-cell {
+    -fx-border-color: transparent;
+    -fx-padding: 5;
+}
+
+.add-calendar-button {
+    -fx-background-color: #333; /* Lighter background for the button */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 10 0;
+}
+
+.days-header {
+    -fx-background-color: #1C1B22;
+    -fx-padding: 10 5;
+}
+
+.day-header {
+    -fx-text-fill: #808080;
+    -fx-font-size: 12px;
+    -fx-alignment: CENTER;
+}
+
+.calendar-grid {
+    -fx-background-color: #1C1B22;
+    -fx-padding: 0;
+    -fx-grid-lines-visible: true;
+}
+
+.calendar-cell {
+    -fx-background-color: #1C1B22;
+    -fx-padding: 5;
+    -fx-border-color: #2F2F37;
+    -fx-border-width: 0.5;
+    -fx-min-height: 100;
+}
+
+.calendar-cell-number {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.day-label {
+    -fx-text-fill: #CCCCCC; /* Light gray for day labels */
+    -fx-font-size: 14px;
+}
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+}
+
+.back-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+.root-pane {
+    -fx-background-color: #202020;
+}
+
+.sidebar-month-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.mini-calendar {
+    -fx-background-color: transparent;
+    -fx-border-color: #333; /* Slightly lighter border for visibility */
+    -fx-border-width: 1;
+    -fx-padding: 5;
+}
+
+.calendar-list {
+    -fx-background-color: transparent;
+}
+
+.view-button:hover, .today-button:hover, .nav-button:hover {
+    -fx-background-color: #3d3d3d;
+}
+
+.settings-button, .user-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.time-column {
+    -fx-background-color: transparent;
+    -fx-min-width: 60px;
+}
+
+.days-grid {
+    -fx-background-color: transparent;
+    -fx-grid-lines-visible: true;
+    -fx-grid-line-color: #3d3d3d;
+}
+
+/* Day cells */
+.day-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: #3d3d3d;
+    -fx-text-fill: white;
+}
+
+/* Event styles */
+.calendar-event {
+    -fx-background-color: #0078D4;
+    -fx-background-radius: 4px;
+    -fx-padding: 4px;
+    -fx-text-fill: white;
+}
+
+.today {
+    -fx-text-fill: #2E90FA;
+    -fx-font-weight: bold;
+}
+
+.month-mini-view {
+    -fx-background-color: #1C1B22;
+    -fx-text-fill: white;
+    -fx-border-color: #2F2F37;
+}
+
+.no-meetings-label, .setup-section label {
+    -fx-text-fill: white;
+}
+
+.settings-section {
+    -fx-background-color: #1C1B22;
+}
+
+/* Adjust colors for black and white theme */
+.root, .top-nav-bar, .sidebar, .days-header, .calendar-grid, .calendar-cell, .root-pane {
+    -fx-background-color: black;
+}
+
+.text, .month-label, .day-header, .calendar-cell-number, .day-label, .nav-button, .back-button, .sidebar-month-label, .settings-button, .user-button, .day-cell, .calendar-event, .today, .no-meetings-label, .setup-section label {
+    -fx-text-fill: white;
+}
+
+.search-box, .view-button, .today-button, .add-calendar-button {
+    -fx-background-color: grey;
+    -fx-text-fill: black;
+}
+
+.view-button:hover, .today-button:hover, .nav-button:hover {
+    -fx-background-color: darkgrey;
+}
+
+.calendar-listview, .mini-calendar, .calendar-list {
+    -fx-control-inner-background: black;
+    -fx-background-color: black;
+}
+
+.calendar-cell {
+    -fx-border-color: grey;
+}
+
+.days-grid, .day-cell {
+    -fx-border-color: darkgrey;
+}

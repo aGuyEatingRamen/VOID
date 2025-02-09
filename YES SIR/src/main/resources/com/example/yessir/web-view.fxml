@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<VBox style="-fx-background-color: #1C1B22;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.yessir.WebViewController">
+
+    <!-- Tab Bar -->
+    <HBox fx:id="tabBar2" alignment="CENTER_LEFT" spacing="5" style="-fx-background-color: black; -fx-padding: 5;">
+      <HBox fx:id="tabBar" alignment="CENTER_LEFT" spacing="5" style="-fx-background-color: transparent; -fx-padding: 5;" />
+      <HBox fx:id="tabBar1" alignment="CENTER_LEFT" spacing="5" style="-fx-background-color: transparent; -fx-padding: 5;">
+         <children>
+            <Button fx:id="newTabButton1" onAction="#createNewTab" style="-fx-background-color: transparent; -fx-text-fill: white;" text="+" textFill="WHITE" />
+         </children>
+      </HBox>
+    </HBox>
+
+    <!-- Navigation Bar -->
+    <HBox alignment="CENTER_LEFT" spacing="5" style="-fx-background-color: black; -fx-padding: 5; -fx-border-color: grey; -fx-border-width: 1 0 0 0; -fx-border-radius: 10 10 0 0;">
+        <Button fx:id="backButton" onAction="#handleBackButton" style="-fx-background-color: transparent;">
+            <graphic>
+                <ImageView fitHeight="16" fitWidth="16">
+                    <Image url="@Images/back-arrow.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <Button fx:id="forwardButton" onAction="#handleForwardButton" style="-fx-background-color: transparent;">
+            <graphic>
+                <ImageView fitHeight="16" fitWidth="16">
+                    <Image url="@Images/ARight.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <Button fx:id="refreshButton" onAction="#handleRefreshButton" style="-fx-background-color: transparent;">
+            <graphic>
+                <ImageView fitHeight="16" fitWidth="16">
+                    <Image url="@Images/refresh.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <TextField fx:id="urlBar" onAction="#loadURL" promptText="Search or enter address" style="-fx-background-color: #222222; -fx-text-fill: white; -fx-prompt-text-fill: #999999; -fx-background-radius: 10; -fx-padding: 8 15;" HBox.hgrow="ALWAYS" />
+
+        <Button fx:id="bookmarkButton" onAction="#handleBookmarkButton" style="-fx-background-color: transparent;">
+            <graphic>
+                <ImageView fx:id="bookmarkIcon" fitHeight="16" fitWidth="16">
+                    <Image url="@Images/bookmark.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+    </HBox>
+
+    <!-- Bookmark Bar -->
+    <HBox fx:id="bookmarkBar" alignment="CENTER_LEFT" spacing="5" style="-fx-background-color: #2B2A33; -fx-padding: 5;">
+        <!-- Bookmark buttons will be added here dynamically -->
+    </HBox>
+
+    <!-- WebView Container -->
+    <StackPane fx:id="webViewContainer" VBox.vgrow="ALWAYS">
+        <WebView fx:id="webView" />
+        <Text fx:id="clockDisplay" style="-fx-fill: white; -fx-font-size: 24;" />
+    </StackPane>
+
+</VBox>

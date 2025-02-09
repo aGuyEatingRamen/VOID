@@ -1,0 +1,163 @@
+.root {
+    -fx-background-color: #000000;
+    -fx-font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.sidebar {
+    -fx-background-color: #2d2d2d;
+    -fx-padding: 5;
+    -fx-spacing: 10;
+}
+
+.tool-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #cccccc;
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-cursor: hand;
+}
+
+.tool-button:hover {
+    -fx-background-color: #3d3d3d;
+}
+
+.top-bar {
+    -fx-background-color: #1e1e1e;
+    -fx-border-color: #3d3d3d;
+    -fx-border-width: 0 0 1 0;
+}
+
+.window-controls {
+    -fx-spacing: 2;
+}
+
+.window-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #cccccc;
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-cursor: hand;
+}
+
+.window-button:hover {
+    -fx-background-color: #3d3d3d;
+}
+
+.tab-pane {
+    -fx-background-color: transparent;
+}
+
+.tab {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #cccccc;
+}
+
+.tab:selected {
+    -fx-background-color: #1e1e1e;
+}
+
+.welcome-content {
+    -fx-background-color: #1e1e1e;
+    -fx-padding: 20;
+}
+
+.time-display {
+    -fx-fill: white;
+    -fx-font-size: 72px;
+    -fx-font-weight: lighter;
+}
+
+.greeting-text {
+    -fx-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: lighter;
+}
+
+.search-box {
+    -fx-background-color: transparent;
+    -fx-border-color: #ffffff33;
+    -fx-border-width: 0 0 1 0;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #ffffff80;
+    -fx-max-width: 300px;
+    -fx-padding: 5 2 5 2;
+}
+
+.search-box:focused {
+    -fx-border-color: white;
+}
+
+.quick-access {
+    -fx-padding: 20;
+}
+
+.quick-links {
+    -fx-padding: 10 0 0 0;
+}
+
+.quick-link-button {
+    -fx-background-color: #ffffff1a;
+    -fx-text-fill: white;
+    -fx-padding: 5 15;
+    -fx-cursor: hand;
+    -fx-background-radius: 3;
+}
+
+.quick-link-button:hover {
+    -fx-background-color: #ffffff33;
+}
+
+.tool-card {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 15;
+    -fx-min-width: 120;
+    -fx-min-height: 80;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.tool-card:hover {
+    -fx-background-color: #3d3d3d;
+}
+
+.status-bar {
+    -fx-background-color: #007acc;
+    -fx-padding: 5;
+}
+
+.status-bar .label {
+    -fx-text-fill: #ffffff;
+}
+
+.footer-text {
+    -fx-fill: #ffffff80;
+    -fx-font-size: 12px;
+}
+
+.tab-pane .tab-header-area {
+    -fx-padding: 0;
+}
+
+.tab-pane .tab {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-padding: 0 15;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #1E1E1E;
+}
+
+.tab-pane .tab-header-background {
+    -fx-background-color: #000000;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: #CCCCCC;
+    -fx-font-family: "Helvetica Light";
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: white;
+}

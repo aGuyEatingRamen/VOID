@@ -1,0 +1,182 @@
+/* Navigation Bar Styles */
+.nav-bar {
+    -fx-background-color: #2B2A33;
+    -fx-padding: 8;
+    -fx-spacing: 5;
+}
+
+.url-bar {
+    -fx-background-color: #42414D;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #999999;
+    -fx-background-radius: 25;
+    -fx-padding: 8 15;
+}
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #CCCCCC;
+}
+
+.nav-button:hover {
+    -fx-opacity: 0.8;
+}
+
+/* Quick Access Bar */
+.quick-access-bar {
+    -fx-background-color: #2B2A33;
+    -fx-padding: 10;
+    -fx-spacing: 15;
+}
+
+.quick-access-button {
+    -fx-background-color: transparent;
+    -fx-padding: 5;
+    -fx-background-radius: 5;
+}
+
+.quick-access-button:hover {
+    -fx-background-color: #42414D;
+}
+
+/* General Content */
+.content-area {
+    -fx-background-color: #2B2A33;
+    -fx-padding: 20;
+}
+
+.section-title {
+    -fx-fill: white;
+    -fx-font-size: 24;
+    -fx-font-family: "Helvetica Light";
+}
+
+.tile-grid {
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+    -fx-padding: 20;
+}
+
+.tile {
+    -fx-background-color: #42414D;
+    -fx-background-radius: 8;
+    -fx-padding: 15;
+}
+
+.tile:hover {
+    -fx-background-color: #52515D;
+}
+
+.tile-text {
+    -fx-fill: #CCCCCC;
+    -fx-font-size: 14;
+    -fx-font-family: "Helvetica Light";
+}
+
+.button:hover {
+    -fx-opacity: 0.8;
+}
+
+.text-field {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* Tab Bar Styles */
+.tab-button {
+    -fx-background-color: #42414D;
+    -fx-text-fill: white;
+    -fx-padding: 5;
+}
+
+.tab-button:hover {
+    -fx-background-color: #52515D;
+}
+
+.close-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-padding: 0 5;
+}
+
+/* General Styles */
+.vbox {
+    -fx-background-color: #1C1B22;
+}
+
+.hbox {
+    -fx-background-color: #2B2A33;
+}
+
+/* Tab Bar Styles */
+.tab-button {
+    -fx-background-color: #42414D;
+    -fx-text-fill: white;
+    -fx-padding: 5;
+}
+
+.tab-button:hover {
+    -fx-background-color: #52515D;
+}
+
+.close-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-padding: 0 5;
+}
+
+/* Clock Display */
+.clock-display {
+    -fx-fill: white;
+    -fx-font-size: 48;
+    -fx-font-family: "Helvetica Light";
+    -fx-alignment: center;
+}
+.root {
+    -fx-background-color: #000000;
+    -fx-font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.quick-access-button {
+    -fx-background-color: #42414D;
+    -fx-text-fill: white;
+    -fx-padding: 10;
+    -fx-background-radius: 5;
+    -fx-min-width: 100;
+}
+
+.quick-access-button:hover {
+    -fx-background-color: #52515D;
+}
+
+.text {
+    -fx-fill: white;
+}
+
+#clockDisplay {
+    -fx-font-size: 72px;
+    -fx-font-weight: bold;
+}
+
+#dateDisplay, #weatherDisplay {
+    -fx-font-size: 24px;
+}
+
+.tab {
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+    -fx-text-fill: white;
+}
+
+.tab .close-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-padding: 0;
+    -fx-font-size: 14px;
+}
+
+.tab .close-button:hover {
+    -fx-background-color: red;
+}

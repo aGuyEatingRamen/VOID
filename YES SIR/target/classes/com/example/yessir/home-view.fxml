@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.yessir.HomeController">
+    <VBox spacing="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <!-- Title Bar -->
+        <HBox fx:id="titleBar" style="-fx-background-color: black; -fx-padding: 10;">
+            <Label style="-fx-text-fill: white; -fx-font-size: 16px;" text="VOID" />
+            <Pane HBox.hgrow="ALWAYS" />
+            <Button onAction="#minimizeWindow" style="-fx-background-color: black; -fx-text-fill: white;" text="—" />
+            <Button onAction="#maximizeWindow" style="-fx-background-color: black; -fx-text-fill: white;" text="☐" />
+            <Button onAction="#closeWindow" style="-fx-background-color: black; -fx-text-fill: white;" text="✕" />
+        </HBox>
+
+        <VBox layoutY="5000.0" minHeight="-Infinity" VBox.vgrow="ALWAYS" />
+        
+        <!-- Main Content -->
+        <VBox alignment="CENTER" spacing="20">
+            <Text fx:id="timeDisplay" styleClass="time-display" text="11:35" />
+            <Text styleClass="greeting-text" text="Hi, how are you today?" />
+            <TextField promptText="Search" styleClass="search-box" />
+            
+            <!-- Quick Links -->
+            <HBox alignment="CENTER" spacing="20" styleClass="quick-links">
+                <Button mnemonicParsing="false" onAction="#handleGlobeClick" style="-fx-background-color: transparent;">
+                    <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@Images/Globe.png" />
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#showCalendar" style="-fx-background-color: transparent;">
+                    <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@Images/Calendar.png" />
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" style="-fx-background-color: transparent;">
+                    <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@Images/Layers.png" />
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" style="-fx-background-color: transparent;">
+                    <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@Images/Terminal.png" />
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" style="-fx-background-color: transparent;">
+                    <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@Images/More_Grid_Big.png" />
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="settingsButton" onAction="#openSettings" style="-fx-background-color: transparent;">
+                    <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0">
+                            <Image url="@Images/Settings.png" />
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </HBox>
+        </VBox>
+
+        <VBox VBox.vgrow="ALWAYS" />
+    </VBox>
+    
+    <Text fx:id="footerText" styleClass="footer-text" text="Default Workspace" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" />
+</AnchorPane>

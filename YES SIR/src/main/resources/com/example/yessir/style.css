@@ -1,0 +1,14 @@
+.varelaregular {
+  font-family: "Varela", sans-serif;
+  src: url('com/example/yessir/Fonts/Varela-Regular.ttf')
+}
+
+.main{
+    -fx-background-color: black;
+}
+.bob{
+    -fx-font-family: 'Varela';
+}
+.Button{
+
+}

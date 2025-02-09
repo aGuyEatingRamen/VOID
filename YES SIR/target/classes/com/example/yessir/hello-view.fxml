@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane style="-fx-background-color: #000000;" styleClass="root" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.yessir.HelloController">
+    <children>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+              <HBox fx:id="titleBar" style="-fx-background-color: black; -fx-padding: 10;">
+                  <Label style="-fx-text-fill: white; -fx-font-size: 16px;" text="VOID" />
+                  <Pane HBox.hgrow="ALWAYS" />
+                  <Button onAction="#minimizeWindow" style="-fx-background-color: black; -fx-text-fill: white;" text="—" />
+                  <Button onAction="#maximizeWindow" style="-fx-background-color: black; -fx-text-fill: white;" text="☐" />
+                  <Button onAction="#closeWindow" style="-fx-background-color: black; -fx-text-fill: white;" text="✕" />
+              </HBox>
+              
+              <VBox VBox.vgrow="ALWAYS" />
+      
+              <HBox fx:id="mainContainer" alignment="CENTER" spacing="0" styleClass="welcome-content">
+                  <VBox alignment="CENTER_LEFT" spacing="20.0" style="-fx-min-width: 350;                           -fx-max-width: 350;                           -fx-translate-x: -150;                          -fx-padding: 0 0 0 100;">
+                      <Text fill="#FFFFFF" styleClass="time-display" text="V O I D">
+                          <font>
+                              <Font name="Helvetica Light" size="63.0" />
+                          </font>
+                      </Text>
+                      
+                      <ChoiceBox fx:id="myChoiceBox" prefHeight="28.0" prefWidth="350.0" style="-fx-background-color: transparent;                                   -fx-border-color: #333333;                                   -fx-border-width: 0 0 1 0;                                  -fx-text-fill: white;                                  -fx-font-family: 'Helvetica Light';                                  -fx-font-size: 11.2px;" styleClass="search-box" />
+                      
+                      <Button fx:id="btnClick" onAction="#display" style="-fx-background-color: transparent;                                -fx-text-fill: #CCCCCC;                                -fx-border-color: #333333;                                -fx-border-width: 0 0 1 0;                                -fx-cursor: hand;                                -fx-padding: 7 28;                                -fx-letter-spacing: 0.3em;" styleClass="quick-link-button" text="E N T E R">
+                          <font>
+                              <Font name="Helvetica Light" size="9.8" />
+                          </font>
+                      </Button>
+                  </VBox>
+                  
+                  <StackPane>
+                      <Rectangle arcHeight="50" arcWidth="50" fill="transparent" height="720.0" stroke="white" strokeWidth="1" width="1280.0" />
+                      <ImageView fitHeight="720.0" preserveRatio="true" style="-fx-translate-x: 50; -fx-padding: 0;                                   -fx-border-color: white;                                   -fx-border-width: 1;                                   -fx-background-color: transparent;">
+                          <clip>
+                              <Rectangle arcHeight="50" arcWidth="50" height="720.0" width="1280.0" />
+                          </clip>
+                          <image>
+                              <Image url="@Images/ThyImage.jpg" />
+                          </image>
+                      </ImageView>
+                  </StackPane>
+              </HBox>
+              
+              <VBox VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+    </children>
+</StackPane>

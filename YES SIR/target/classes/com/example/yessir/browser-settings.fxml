@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+
+<VBox spacing="15" style="-fx-background-color: black; -fx-padding: 20; -fx-font-family: 'Helvetica';"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <Text text="Browser Settings" style="-fx-text-fill: white; -fx-font-size: 24px;" />
+
+    <Text text="General Settings" style="-fx-text-fill: white; -fx-font-size: 20px;" />
+    <VBox spacing="10">
+        <Label text="Homepage and Startup:" style="-fx-text-fill: white;" />
+        <ComboBox fx:id="homepageComboBox" style="-fx-background-color: #424242; -fx-text-fill: white;">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Open a specific page" />
+                    <String fx:value="Continue from the last session" />
+                    <String fx:value="Open a new tab" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+
+        <Label text="Default Search Engine:" style="-fx-text-fill: white;" />
+        <ComboBox fx:id="searchEngineComboBox" style="-fx-background-color: #424242; -fx-text-fill: white;">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Google" />
+                    <String fx:value="Bing" />
+                    <String fx:value="DuckDuckGo" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+
+        <CheckBox fx:id="defaultBrowserCheckBox" text="Set as default browser" style="-fx-text-fill: white;" />
+    </VBox>
+
+    <Text text="Appearance" style="-fx-text-fill: white; -fx-font-size: 20px;" />
+    <VBox spacing="10">
+        <Label text="Themes and Colors:" style="-fx-text-fill: white;" />
+        <ComboBox fx:id="themeComboBox" style="-fx-background-color: #424242; -fx-text-fill: white;">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Light" />
+                    <String fx:value="Dark" />
+                    <String fx:value="System Default" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+
+        <Label text="Font Size:" style="-fx-text-fill: white;" />
+        <Slider fx:id="fontSizeSlider" min="10" max="30" value="14" showTickLabels="true" showTickMarks="true" style="-fx-background-color: #424242;" />
+
+        <Label text="Zoom Level:" style="-fx-text-fill: white;" />
+        <Slider fx:id="zoomSlider" min="50" max="200" value="100" showTickLabels="true" showTickMarks="true" style="-fx-background-color: #424242;" />
+    </VBox>
+
+    <Text text="Privacy and Security" style="-fx-text-fill: white; -fx-font-size: 20px;" />
+    <VBox spacing="10">
+        <CheckBox fx:id="trackingProtectionCheckBox" text="Enable Tracking Protection" style="-fx-text-fill: white;" />
+        <CheckBox fx:id="doNotTrackCheckBox" text="Send Do Not Track requests" style="-fx-text-fill: white;" />
+        <Button fx:id="passwordManagerButton" text="Manage Passwords" style="-fx-background-color: #424242; -fx-text-fill: white;" />
+    </VBox>
+
+    <Text text="Extensions and Add-ons" style="-fx-text-fill: white; -fx-font-size: 20px;" />
+    <VBox spacing="10">
+        <Button fx:id="manageExtensionsButton" text="Manage Extensions" style="-fx-background-color: #424242; -fx-text-fill: white;" />
+        <Button fx:id="getExtensionsButton" text="Get More Extensions" style="-fx-background-color: #424242; -fx-text-fill: white;" />
+    </VBox>
+
+    <Text text="Performance" style="-fx-text-fill: white; -fx-font-size: 20px;" />
+    <VBox spacing="10">
+        <CheckBox fx:id="hardwareAccelerationCheckBox" text="Enable Hardware Acceleration" style="-fx-text-fill: white;" />
+        <CheckBox fx:id="backgroundServicesCheckBox" text="Allow Background Services" style="-fx-text-fill: white;" />
+    </VBox>
+
+    <Text text="Downloads and Files" style="-fx-text-fill: white; -fx-font-size: 20px;" />
+    <VBox spacing="10">
+        <Label text="Download Location:" style="-fx-text-fill: white;" />
+        <TextField fx:id="downloadLocationField" promptText="Choose download location" style="-fx-background-color: #424242; -fx-text-fill: white;" />
+        <CheckBox fx:id="askLocationCheckBox" text="Ask where to save each file" style="-fx-text-fill: white;" />
+    </VBox>
+
+    <Text text="Network" style="-fx-text-fill: white; -fx-font-size: 20px;" />
+    <VBox spacing="10">
+        <Label text="Proxy Settings:" style="-fx-text-fill: white;" />
+        <TextField fx:id="proxyField" promptText="Enter proxy settings" style="-fx-background-color: #424242; -fx-text-fill: white;" />
+        <CheckBox fx:id="vpnIntegrationCheckBox" text="Enable VPN Integration" style="-fx-text-fill: white;" />
+    </VBox>
+
+    <Text text="Accessibility" style="-fx-text-fill: white; -fx-font-size: 20px;" />
+    <VBox spacing="10">
+        <CheckBox fx:id="screenReaderSupportCheckBox" text="Enable Screen Reader Support" style="-fx-text-fill: white;" />
+        <CheckBox fx:id="highContrastModeCheckBox" text="Enable High-Contrast Mode" style="-fx-text-fill: white;" />
+    </VBox>
+
+    <Text text="Sync and Accounts" style="-fx-text-fill: white; -fx-font-size: 20px;" />
+    <VBox spacing="10">
+        <CheckBox fx:id="syncBookmarksCheckBox" text="Sync Bookmarks" style="-fx-text-fill: white;" />
+        <CheckBox fx:id="syncHistoryCheckBox" text="Sync History" style="-fx-text-fill: white;" />
+    </VBox>
+
+    <Text text="Advanced" style="-fx-text-fill: white; -fx-font-size: 20px;" />
+    <VBox spacing="10">
+        <Button fx:id="developerToolsButton" text="Developer Tools" style="-fx-background-color: #424242; -fx-text-fill: white;" />
+        <Button fx:id="resetBrowserButton" text="Reset Browser Settings" style="-fx-background-color: #424242; -fx-text-fill: white;" />
+    </VBox>
+
+    <Text text="Custom Settings" style="-fx-text-fill: white; -fx-font-size: 20px;" />
+    <VBox spacing="10">
+        <CheckBox fx:id="adBlockerToggle" text="Enable AD Blocker" style="-fx-text-fill: white;" />
+        <CheckBox fx:id="darkModeToggle" text="Enable Dark Mode" style="-fx-text-fill: white;" />
+        <CheckBox fx:id="amnesiaSystemToggle" text="Enable Amnesia System" style="-fx-text-fill: white;" />
+    </VBox>
+
+    <Button text="Save Settings" style="-fx-background-color: #424242; -fx-text-fill: white; -fx-padding: 10;" />
+</VBox>

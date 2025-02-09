@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.DropShadow?>
+
+<StackPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" style="-fx-background-color: black;">
+    <VBox>
+
+        <VBox VBox.vgrow="ALWAYS" />
+        
+        <VBox alignment="CENTER" spacing="30">
+            <Text text="L O A D I N G" style="-fx-font-family: 'Helvetica Light'; 
+                                            -fx-font-size: 24; 
+                                            -fx-fill: white; 
+                                            -fx-letter-spacing: 0.5em;">
+                <effect>
+                    <Glow level="0.5">
+                        <input>
+                            <DropShadow color="white" spread="0.2" />
+                        </input>
+                    </Glow>
+                </effect>
+            </Text>
+            <StackPane>
+                <Rectangle fx:id="loadingBarBackground" 
+                          width="400" height="2" 
+                          fill="#333333"/>
+                <Rectangle fx:id="loadingBarProgress" 
+                          width="0" height="2" 
+                          fill="white"
+                          translateX="-200">
+                    <effect>
+                        <Glow level="0.6">
+                            <input>
+                                <DropShadow color="white" spread="0.3" />
+                            </input>
+                        </Glow>
+                    </effect>
+                </Rectangle>
+            </StackPane>
+        </VBox>
+        
+        <VBox VBox.vgrow="ALWAYS" />
+    </VBox>
+</StackPane>

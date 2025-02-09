@@ -1,0 +1,9 @@
+.him{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #2d2d2d; /* Sidebar background color */
+      height: 100vh; /* Full viewport height */
+      width: 60px; /* Fixed sidebar width */
+      padding: 10px 0;
+}

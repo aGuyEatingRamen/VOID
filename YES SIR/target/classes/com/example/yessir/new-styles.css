@@ -1,0 +1,76 @@
+/* General Styles */
+.root {
+    -fx-background-color: #1C1C1C; /* Dark gray background */
+    -fx-font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Header Text */
+.header-text {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF; /* White text */
+}
+
+/* Button Styles */
+.login-button {
+    -fx-background-color: #2D2D2D; /* Darker gray */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-padding: 10px 20px;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+    -fx-border-color: #444444; /* Light gray border */
+    -fx-border-width: 1;
+}
+
+.login-button:hover {
+    -fx-background-color: #3D3D3D; /* Slightly lighter gray on hover */
+}
+
+/* TextField Styles */
+.custom-url-field {
+    -fx-background-color: #2D2D2D; /* Darker gray */
+    -fx-border-color: #444444; /* Light gray border */
+    -fx-border-width: 1;
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-padding: 10px;
+}
+
+/* ListView Styles */
+.email-list {
+    -fx-background-color: #2D2D2D; /* Darker gray */
+    -fx-border-color: #444444; /* Light gray border */
+    -fx-border-width: 1;
+    -fx-text-fill: #FFFFFF; /* White text */
+}
+
+/* StackPane for WebView */
+.webViewContainer {
+    -fx-background-color: #1C1C1C; /* Dark gray */
+}
+
+/* Footer Text */
+.footer-text {
+    -fx-fill: #FFFFFF; /* White text */
+    -fx-font-size: 12px;
+    -fx-padding: 10px;
+}
+
+/* Quick Links */
+.quick-links {
+    -fx-padding: 10;
+}
+
+/* Search Box */
+.search-box {
+    -fx-background-color: transparent;
+    -fx-border-color: #FFFFFF33; /* Semi-transparent white */
+    -fx-border-width: 0 0 1 0;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #FFFFFF80; /* Light gray for prompt text */
+    -fx-max-width: 300px;
+    -fx-padding: 5 2 5 2;
+}
+
+.search-box:focused {
+    -fx-border-color: white; /* White border when focused */
+}
