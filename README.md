@@ -1,2 +1,3 @@
 # VOID
-A AI-powered workspace where one can take notes, browse the web, schedule meetings and events on their calendars, and have AI help them go through the unpredictable waters of life. STILL A HUGE WORK IN PROGRESS!!
+A AI-powered workspace where one can take notes, browse the web, schedule meetings and events on their calendars, and have AI help them go through the unpredictable waters of life. STILL A HUGE WORK IN PROGRESS!!  
+*Sorry if some of the names are a little goofy, it still a work in prgress as once it is changed, I need to change every file path in the code....
